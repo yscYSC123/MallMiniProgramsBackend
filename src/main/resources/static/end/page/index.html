@@ -5,23 +5,39 @@
     <title>后台管理系统</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../css/font-awesome.css" rel="stylesheet"/>
+    <link href="../css/basic.css" rel="stylesheet"/>
+    <link href="../css/custom.css" rel="stylesheet"/>
+    <link href="../css/my.css" rel="stylesheet"/>
+    <link href="../css/element/index.css" rel="stylesheet"/>
     <style>
         [v-cloak]{
             display: none;
         }
     </style>
 </head>
-<body style="background-color: #E2E2E2">
-<div id="app" class="container">
-    <div class="row text-center" style="padding-top: 100px">
-        <div class="col-md-12">
-            <h2>后台管理系统</h2>
+<body>
+<div id="app">
+    <nav class="navbar navbar-default navbar-cls-top" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">后台管理系统</a>
         </div>
-    </div>
+        <div class="header-right">
+            <a href="javascript:void(0)" class="btn btn-info" @click="logout" title="退出登录">
+                <i class="fa fa-sign-out fa-2x"></i>
+            </a>
+        </div>
+    </nav>
 </div>
-
+<script src="../js/jquery-1.10.2.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.metisMenu.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/my.js"></script>
 <script src="../js/vue2.6.11/vue.min.js"></script>
 <script src="../js/vue2.6.11/axios.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/element/index.js"></script>
+
 <script>
     new Vue({
         el:"#app",

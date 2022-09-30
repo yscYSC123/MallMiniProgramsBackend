@@ -7,6 +7,7 @@ import com.javaclimb.common.ResultCode;
 import com.javaclimb.entity.UserInfo;
 import com.javaclimb.exception.CustomException;
 import com.javaclimb.service.UserInfoService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -46,6 +47,15 @@ public class AccountController {
     @PostMapping("/resetPassword")
     public Result<UserInfo> restPassword(@RequestBody UserInfo userInfo){
         return Result.success(userInfoService.resetPassword(userInfo.getName()));
+    }
+
+    /**
+     * 登出
+     */
+    @GetMapping("/logout")
+    public Result logout(HttpServletRequest request){
+        request.getSession().setAttribute(Common.USER_INFO,null);
+        return Result.success();
     }
 
 }
