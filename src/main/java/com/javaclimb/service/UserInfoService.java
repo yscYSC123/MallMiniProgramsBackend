@@ -36,4 +36,17 @@ public class UserInfoService {
         return list.get(0);
     }
 
+    /**
+     * 重置密码
+     */
+    public UserInfo resetPassword(String name){
+        List<UserInfo> list = userInfoMapper.findByName(name);
+        if (CollectionUtil.isEmpty(list)){
+            throw new CustomException(ResultCode.USER_NO_EXIST_ERROR);
+        }
+        list.get(0).setPassword(SecureUtil.md5("0000"));
+        userInfoMapper.updateByPrimaryKeySelective(list.get(0));
+        return list.get(0);
+    }
+
 }

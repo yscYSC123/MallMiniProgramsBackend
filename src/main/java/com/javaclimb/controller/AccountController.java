@@ -40,4 +40,12 @@ public class AccountController {
         return Result.success(login);
     }
 
+    /**
+     * 重置密码 0000
+     */
+    @PostMapping("/resetPassword")
+    public Result<UserInfo> restPassword(@RequestBody UserInfo userInfo){
+        return Result.success(userInfoService.resetPassword(userInfo.getName()));
+    }
+
 }
