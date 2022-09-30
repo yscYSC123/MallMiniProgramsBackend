@@ -2,6 +2,8 @@ package com.javaclimb.service;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.crypto.SecureUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.javaclimb.common.ResultCode;
 import com.javaclimb.entity.UserInfo;
 import com.javaclimb.exception.CustomException;
@@ -47,6 +49,15 @@ public class UserInfoService {
         list.get(0).setPassword(SecureUtil.md5("0000"));
         userInfoMapper.updateByPrimaryKeySelective(list.get(0));
         return list.get(0);
+    }
+
+    /**
+     * 分页查询用户列表
+     */
+    public PageInfo<UserInfo> findPage(Integer pageNum,Integer pageSize,String name){
+        PageHelper.startPage(pageNum,pageSize);
+        List<UserInfo> list = userInfoMapper.findByName(name);
+        return PageInfo.of(list);
     }
 
 }
