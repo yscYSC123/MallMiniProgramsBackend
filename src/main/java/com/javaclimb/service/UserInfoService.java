@@ -53,6 +53,7 @@ public class UserInfoService {
 
     /**
      * 分页查询用户列表
+     * 按用户名查询
      */
     public PageInfo<UserInfo> findPage(Integer pageNum,Integer pageSize,String name){
         PageHelper.startPage(pageNum,pageSize);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>用户信息</title>
@@ -100,6 +100,28 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                <ul class="pagination">
+                                    <li class="page-item" v-bind:class="{disabled:preActive}">
+                                        <a class="page-link" href="javascript:void(0)"
+                                           v-on:click="loadTable(pageInfo.pageNum - 1)">上一页</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" v-if="pageInfo.pageNum > 1" href="javascript:void(0)"
+                                           v-on:click="loadTable(pageInfo.pageNum - 1)">{{pageInfo.pageNum - 1}}</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="javascript:void(0)">{{pageInfo.pageNum}}</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" v-if="pageInfo.hasNextPage" href="javascript:void(0)"
+                                           v-on:click="loadTable(pageInfo.pageNum + 1)">{{pageInfo.pageNum + 1}}</a>
+                                    </li>
+                                    <li class="page-item" v-bind:class="{disabled:nextActive}">
+                                        <a class="page-link" href="javascript:void(0)"
+                                           v-on:click="loadTable(pageInfo.hasNextPage?(pageInfo.pageNum + 1):pageInfo.pageNum)">下一页</a>
+                                    </li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
