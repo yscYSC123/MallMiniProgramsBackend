@@ -41,4 +41,13 @@ public class UserInfoController {
         return Result.success(userInfo);
     }
 
+    /**
+     * 修改用户信息
+     */
+    @PutMapping
+    public Result<UserInfo> update(@RequestBody UserInfo userInfo){
+        userInfoService.update(userInfo);
+        return Result.success();
+    }
+
 }

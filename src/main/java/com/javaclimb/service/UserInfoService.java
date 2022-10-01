@@ -83,4 +83,11 @@ public class UserInfoService {
         return userInfo;
     }
 
+    /**
+     * 修改用户信息
+     */
+    public void update(UserInfo userInfo){
+        userInfoMapper.updateByPrimaryKeySelective(userInfo);
+    }
+
 }

@@ -78,7 +78,7 @@
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>账号</th>
+                                            <th>姓名</th>
                                             <th>昵称</th>
                                             <th>性别</th>
                                             <th>年龄</th>
@@ -96,7 +96,9 @@
                                             <td>{{obj.age}}</td>
                                             <td>{{obj.phone}}</td>
                                             <td>{{obj.address}}</td>
-                                            <td></td>
+                                            <td>
+                                                <button class="btn btn-primary btn-xs" v-on:click="init(obj)">编辑</button>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -256,17 +258,33 @@
                 if(!checkValid(this.entity)){
                    return false;
                 }
-                if (!this.entity.id){
+                if (!this.entity.id){       //新增
                     axios.post("/userInfo",this.entity).then(res => {
                        if (res.data.code === '0'){
                            msg('success','添加成功');
                            $('#mod').modal('hide');
                            this.loadTable(1);
                        } else {
-                           msg('error','res.data.msg');
+                           msg('error','用户已存在');
                        }
                     });
+                }else{      //修改
+                    axios.put("/userInfo",this.entity).then(res => {
+                        if (res.data.code === '0'){
+                            msg('success','更新成功');
+                            $('#mod').modal('hide');
+                            this.loadTable(1);
+                        } else {
+                            msg('error','res.data.msg');
+                        }
+                    });
                 }
+            },
+
+            //编辑初始化
+            init(o){
+                this.entity = JSON.parse(JSON.stringify(o));
+                $('#mod').modal('show');
             }
         }
     });
