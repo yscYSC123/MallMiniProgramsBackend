@@ -1,6 +1,6 @@
 function checkValid(entity) {
     if (!entity.name || entity.name === "") {
-        alert("name不能为空");
+        alert("账号不能为空");
         return false;
     }
     if (entity.phone && entity.phone !== "") {

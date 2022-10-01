@@ -28,4 +28,7 @@
       and `name` = #{name}
     </if>
   </select>
+  <select id="checkRepeat" resultType="java.lang.Integer">
+    select count(*) from user_info where ${column} = #{value}
+  </select>
 </mapper>

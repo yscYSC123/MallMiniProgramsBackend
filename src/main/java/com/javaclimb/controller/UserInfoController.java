@@ -31,4 +31,14 @@ public class UserInfoController {
                                            @PathVariable String name){
         return Result.success(userInfoService.findPage(pageNum,pageSize,name));
     }
+
+    /**
+     * 新增用户
+     */
+    @PostMapping
+    public Result<UserInfo> add(@RequestBody UserInfo userInfo){
+        userInfoService.add(userInfo);
+        return Result.success(userInfo);
+    }
+
 }

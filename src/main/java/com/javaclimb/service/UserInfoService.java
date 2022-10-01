@@ -1,6 +1,7 @@
 package com.javaclimb.service;
 
 import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -59,6 +60,27 @@ public class UserInfoService {
         PageHelper.startPage(pageNum,pageSize);
         List<UserInfo> list = userInfoMapper.findByName(name);
         return PageInfo.of(list);
+    }
+
+    /**
+     * 判断用户是否已经存在
+     */
+    public UserInfo add(UserInfo userInfo){
+        int count = userInfoMapper.checkRepeat("name",userInfo.getName());
+        if (count > 0){
+            throw new CustomException(ResultCode.USER_EXIST_ERROR);
+        }
+        if (StrUtil.isBlank(userInfo.getPassword())){
+            //默认密码0000
+            userInfo.setPassword(SecureUtil.md5("0000"));
+        }else {
+            userInfo.setPassword(SecureUtil.md5(userInfo.getPassword()));
+        }
+
+        //设置新增用户都是买家
+        userInfo.setLevel(3);
+        userInfoMapper.insertSelective(userInfo);
+        return userInfo;
     }
 
 }
