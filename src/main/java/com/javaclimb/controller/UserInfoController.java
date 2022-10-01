@@ -45,8 +45,17 @@ public class UserInfoController {
      * 修改用户信息
      */
     @PutMapping
-    public Result<UserInfo> update(@RequestBody UserInfo userInfo){
+    public Result update(@RequestBody UserInfo userInfo){
         userInfoService.update(userInfo);
+        return Result.success();
+    }
+
+    /**
+     * 删除用户信息
+     */
+    @DeleteMapping("/{id}")
+    public Result delete(@PathVariable Long id){
+        userInfoService.delete(id);
         return Result.success();
     }
 

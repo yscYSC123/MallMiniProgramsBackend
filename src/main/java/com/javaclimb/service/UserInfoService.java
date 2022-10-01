@@ -90,4 +90,11 @@ public class UserInfoService {
         userInfoMapper.updateByPrimaryKeySelective(userInfo);
     }
 
+    /**
+     * 根据id删除用户
+     */
+    public void delete(Long id){
+        userInfoMapper.deleteByPrimaryKey(id);
+    }
+
 }

@@ -98,6 +98,7 @@
                                             <td>{{obj.address}}</td>
                                             <td>
                                                 <button class="btn btn-primary btn-xs" v-on:click="init(obj)">编辑</button>
+                                                <button class="btn btn-danger btn-xs" v-on:click="del(obj.id)">删除</button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -265,7 +266,7 @@
                            $('#mod').modal('hide');
                            this.loadTable(1);
                        } else {
-                           msg('error','用户已存在');
+                           msg('error',res.data.msg);
                        }
                     });
                 }else{      //修改
@@ -275,7 +276,7 @@
                             $('#mod').modal('hide');
                             this.loadTable(1);
                         } else {
-                            msg('error','res.data.msg');
+                            msg('error',res.data.msg);
                         }
                     });
                 }
@@ -285,6 +286,28 @@
             init(o){
                 this.entity = JSON.parse(JSON.stringify(o));
                 $('#mod').modal('show');
+            },
+
+            //删除用户
+            del(id){
+                let _this = this;
+                this.$confirm('确认删除？','系统提示',{
+                    confirmButtonText:'确定',
+                    cancelButtonText:'取消',
+                    cancelButtonClass:'btn-custom-cancel',
+                    type: 'warning'
+                }).then(function () {
+                    axios.delete("/userInfo/" + id).then(res => {
+                        if (res.data.code === '0') {
+                            msg('success', '删除成功');
+                            _this.loadTable(1);
+                        } else {
+                            msg('error', res.data.msg);
+                        }
+                    });
+                }).catch(function () {
+                    console.log("取消成功！");
+                });
             }
         }
     });
