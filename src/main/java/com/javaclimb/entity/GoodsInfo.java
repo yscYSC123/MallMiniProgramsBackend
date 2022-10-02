@@ -1,9 +1,6 @@
 package com.javaclimb.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -21,81 +18,97 @@ public class GoodsInfo {
     /**
      *   商品名称
      */
+    @Column(name = "name")
     private String name;
 
     /**
      *   商品价格
      */
+    @Column(name = "price")
     private Double price;
 
     /**
      *   商品折扣
      */
+    @Column(name = "discount")
     private Double discount;
 
     /**
      *   商品销量
      */
+    @Column(name = "sales")
     private Integer sales;
 
     /**
      *   商品点赞数
      */
+    @Column(name = "hot")
     private Integer hot;
 
     /**
      *   是否推荐
      */
+    @Column(name = "recommend")
     private String recommend;
 
     /**
      *   库存
      */
+    @Column(name = "count")
     private Integer count;
 
     /**
      *   所属类别ID
      */
+    @Column(name = "typeid")
     private Long typeid;
 
     /**
      *   商品图片id，用英文逗号隔开
      */
+    @Column(name = "fileds")
     private String fileds;
 
     /**
      *   所属卖家ID
      */
+    @Column(name = "userid")
     private Long userid;
 
     /**
      *   所属卖家等级
      */
+    @Column(name = "level")
     private Integer level;
 
     /**
      *   商品描述
      */
+    @Column(name = "description")
     private String description;
 
     /**
      * 所属类别名称
      */
+    @Transient
     private String typeName;
 
     /**
      * 所属卖家姓名
      */
+    @Transient
     private String userName;
 
     /**
      *  商品图片具体地址列表
      */
+    @Transient
     private List<Long> fileList;
 
     /**
      * 每个已购买用户评价状态
      */
+    @Transient
     private String commentStatus;
 
 
@@ -201,5 +214,37 @@ public class GoodsInfo {
 
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
+    }
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public List<Long> getFileList() {
+        return fileList;
+    }
+
+    public void setFileList(List<Long> fileList) {
+        this.fileList = fileList;
+    }
+
+    public String getCommentStatus() {
+        return commentStatus;
+    }
+
+    public void setCommentStatus(String commentStatus) {
+        this.commentStatus = commentStatus;
     }
 }
