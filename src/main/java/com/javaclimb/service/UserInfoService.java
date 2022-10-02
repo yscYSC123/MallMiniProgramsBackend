@@ -63,9 +63,10 @@ public class UserInfoService {
     }
 
     /**
-     * 判断用户是否已经存在
+     * 新增用户
      */
     public UserInfo add(UserInfo userInfo){
+        //判断用户是否已经存在
         int count = userInfoMapper.checkRepeat("name",userInfo.getName());
         if (count > 0){
             throw new CustomException(ResultCode.USER_EXIST_ERROR);
