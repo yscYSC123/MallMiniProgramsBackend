@@ -2,13 +2,14 @@
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>用户信息</title>
+    <title>公告信息</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
     <link href="../css/font-awesome.css" rel="stylesheet"/>
     <link href="../css/basic.css" rel="stylesheet"/>
     <link href="../css/custom.css" rel="stylesheet"/>
     <link href="../css/my.css" rel="stylesheet"/>
     <link href="../css/element/index.css" rel="stylesheet"/>
+    <link href="../css/quill.snow.css" rel="stylesheet"/>
     <style>
         [v-cloak]{
             display: none;
@@ -27,7 +28,7 @@
             </a>
         </div>
         <div class="header-right">
-            <a href="accountUserInfo.html" class="btn btn-info" title="跳转到个人信息">
+            <a href="accountadvertiserInfo.html" class="btn btn-info" title="跳转到个人信息">
                 <i class="fa fa-user fa-2x"></i>
             </a>
         </div>
@@ -45,8 +46,8 @@
                 <li>
                     <a href="#"><i class="fa fa-yelp"></i>信息展示<span class="fa arrow"></span> </a>
                     <ul class="nav nav-second-level collapse in">
-                        <li><a class="active-menu" href="userInfo.html"><i class="fa fa-table"></i>用户信息 </a> </li>
-                        <li><a href="advertiserInfo.html"><i class="fa fa-table"></i>公告信息 </a> </li>
+                        <li><a href="userInfo.html"><i class="fa fa-table"></i>用户信息 </a> </li>
+                        <li><a class="active-menu" href="advertiserInfo.html"><i class="fa fa-table"></i>公告信息 </a> </li>
                         <li><a href="typeInfo.html"><i class="fa fa-table"></i>商品类别 </a> </li>
                         <li><a href="goodsInfo.html"><i class="fa fa-table"></i>商品详情 </a> </li>
                         <li><a href="orderInfo.html"><i class="fa fa-table"></i>订单信息 </a> </li>
@@ -54,8 +55,8 @@
                         <li><a href="commentInfo.html"><i class="fa fa-table"></i>评价信息 </a> </li>
                     </ul>
                 </li>
-                <li><a href="accountUserInfo.html"><i class="fa fa-user"></i>个人信息 </a> </li>
-                <li><a href="accountUserInfo.html"><i class="fa fa-unlock"></i>修改密码 </a> </li>
+                <li><a href="accountadvertiserInfo.html"><i class="fa fa-user"></i>个人信息 </a> </li>
+                <li><a href="accountadvertiserInfo.html"><i class="fa fa-unlock"></i>修改密码 </a> </li>
                 <li><a href="javascript:void(0)" @click="logout"><i class="fa fa-power-off"></i>退出登录 </a> </li>
             </div>
         </div>
@@ -66,7 +67,7 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            用户信息列表
+                            公告信息列表
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -77,31 +78,23 @@
                                 </div>
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>姓名</th>
-                                            <th>昵称</th>
-                                            <th>性别</th>
-                                            <th>年龄</th>
-                                            <th>手机号</th>
-                                            <th>地址</th>
-                                            <th>操作</th>
-                                        </tr>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>公告标题</th>
+                                        <th>公告时间</th>
+                                        <th>操作</th>
+                                    </tr>
                                     </thead>
                                     <tbody v-for="obj in objs">
-                                        <tr>
-                                            <td>{{obj.id}}</td>
-                                            <td>{{obj.name}}</td>
-                                            <td>{{obj.nickname}}</td>
-                                            <td>{{obj.sex}}</td>
-                                            <td>{{obj.age}}</td>
-                                            <td>{{obj.phone}}</td>
-                                            <td>{{obj.address}}</td>
-                                            <td>
-                                                <button class="btn btn-primary btn-xs" v-on:click="init(obj)">编辑</button>
-                                                <button class="btn btn-danger btn-xs" v-on:click="del(obj.id)">删除</button>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td>{{obj.id}}</td>
+                                        <td>{{obj.name}}</td>
+                                        <td>{{obj.time}}</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-xs" v-on:click="init(obj)">编辑</button>
+                                            <button class="btn btn-danger btn-xs" v-on:click="del(obj.id)">删除</button>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
                                 <ul class="pagination">
@@ -133,69 +126,34 @@
             </div>
         </div>
     </div>
-
-    <div class="modal" id="mod">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="modal-title">请填写信息</span>
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal">
-                        <input type="hidden" id="id" name="id" v-mode="entity.id">
-                        <div class="form-group">
-                            <div class="col-sm-3 control-label">姓名</div>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" v-model="entity.name" placeholder="请输入姓名">
-                            </div>
+</div>
+<div class="modal" id="mod">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">请填写信息</span>
+                <button type="button" class="close" data-dismiss="modal">x</button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <input type="hidden" id="modal-id" name="modal-id">
+                    <div class="form-group">
+                        <div class="col-sm-3 control-label">公告标题</div>
+                        <div class="col-sm-7">
+                            <input id="modal-name" name="modal-name" type="text" class="form-control" placeholder="请输入公告标题">
                         </div>
-                        <div class="form-group">
-                            <div class="col-sm-3 control-label">昵称</div>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" v-model="entity.nickname" placeholder="请输入昵称">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-3 control-label">性别</div>
-                            <div class="col-sm-7">
-                                <label class="radio-inline">
-                                    <input type="radio" value="男" v-model="entity.sex">男
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" value="女" v-model="entity.sex">女
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-3 control-label">年龄</div>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" v-model="entity.age" placeholder="请输入年龄">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-3 control-label">手机号</div>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" v-model="entity.phone" placeholder="请输入手机号">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-3 control-label">地址</div>
-                            <div class="col-sm-7">
-                                <input type="text" class="form-control" v-model="entity.address" placeholder="请输入地址">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-                    <button type="button" class="btn btn-primary" v-on:click="save()">保存</button>
-                </div>
+                    </div>
+                    <div id="editor" style="min-height: 300px"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button id="saveBtn" type="button" class="btn btn-primary">保存</button>
             </div>
         </div>
     </div>
-
 </div>
+
 <script src="../js/jquery-1.10.2.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/jquery.metisMenu.js"></script>
@@ -205,6 +163,7 @@
 <script src="../js/vue2.6.11/axios.js"></script>
 <script src="../js/echarts.min.js"></script>
 <script src="../js/element/index.js"></script>
+<script src="../js/quill.js"></script>
 
 <script>
     function msg(type,msg) {
@@ -217,7 +176,25 @@
         })
     }
 
-    new Vue({
+    let quill = new Quill('#editor',{
+       modules:{
+           toolbar:{
+                container:[
+                    [{'header':[1,2,3,4,false]}],   //标题字体
+                    [{'font':[]}],      //字体
+                    ['bold','italic','underline','strike'],     //切换字体样式
+                    [{'align':[]}],        //字体对齐方式
+                    ['blockquote','code-block'],        //文本块，代码块
+                    [{'color':[]},{'background':[]}],       //字体颜色，字体背景
+                    ['clean'],      //清除格式
+                    ['image','link','video']        //图片，链接，视频
+                ]
+           }
+       } ,
+        theme:'snow'
+    });
+
+    let wrapper = new Vue({
         el:"#wrapper",
         data:{
             user:{},
@@ -226,70 +203,45 @@
             pageInfo:{},
             preActive:true,     //有上一页为false，没有为true
             nextActive:true,     //有下一页为false，没有为true
-            entity:{
-                sex:'男'
-            }
+            entity:{}
         },
         created:function () {
             this.user = JSON.parse(localStorage.getItem('user'));
             this.loadTable(1);
-            },
+        },
         methods:{
             loadTable(pageNum){
                 let name = this.name === '' ? 'all' : this.name;
-                axios.get("/userInfo/page/"+name+"?pageNum="+pageNum).then(res => {
-                   if (res.data.code === '0'){
-                       this.objs = res.data.data.list;
-                       this.pageInfo = res.data.data;
-                       this.preActive = !(this.pageInfo.hasPreviousPage);
-                       this.nextActive = !(this.pageInfo.hasNextPage);
-                   }else{
+                axios.get("/advertiserInfo/page/"+name+"?pageNum="+pageNum).then(res => {
+                    if (res.data.code === '0'){
+                        this.objs = res.data.data.list;
+                        this.pageInfo = res.data.data;
+                        this.preActive = !(this.pageInfo.hasPreviousPage);
+                        this.nextActive = !(this.pageInfo.hasNextPage);
+                    }else{
                         msg('error',res.data.msg);
-                   }
+                    }
                 });
             },
 
             //显示新增
             add(){
-                this.entity = {sex:'男'};
+                this.entity = {};
+                $('#modal-id').val('');
+                $('#modal-name').val('');
+                quill.root.innerHTML = '';
                 $('#mod').modal('show');
-            },
-
-            //将当前表单保存到数据库
-            save(){
-                if(!checkValid(this.entity)){
-                   return false;
-                }
-                if (!this.entity.id){       //新增
-                    axios.post("/userInfo",this.entity).then(res => {
-                       if (res.data.code === '0'){
-                           msg('success','添加成功');
-                           $('#mod').modal('hide');
-                           this.loadTable(1);
-                       } else {
-                           msg('error',res.data.msg);
-                       }
-                    });
-                }else{      //修改
-                    axios.put("/userInfo",this.entity).then(res => {
-                        if (res.data.code === '0'){
-                            msg('success','更新成功');
-                            $('#mod').modal('hide');
-                            this.loadTable(1);
-                        } else {
-                            msg('error',res.data.msg);
-                        }
-                    });
-                }
             },
 
             //编辑初始化
             init(o){
-                this.entity = JSON.parse(JSON.stringify(o));
+                $('#modal-id').val(o.id);
+                $('#modal-name').val(o.name);
+                quill.root.innerHTML = o.content;
                 $('#mod').modal('show');
             },
 
-            //删除用户
+            //删除公告
             del(id){
                 let _this = this;
                 this.$confirm('确认删除？','系统提示',{
@@ -298,7 +250,7 @@
                     cancelButtonClass:'btn-custom-cancel',
                     type: 'warning'
                 }).then(function () {
-                    axios.delete("/userInfo/" + id).then(res => {
+                    axios.delete("/advertiserInfo/" + id).then(res => {
                         if (res.data.code === '0') {
                             msg('success', '删除成功');
                             _this.loadTable(1);
@@ -312,6 +264,36 @@
             }
         }
     });
+
+    //将当前表单保存到数据库
+    $('#saveBtn').click(function () {
+        let entity = wrapper.$data.entity;
+        entity.content = quill.root.innerHTML;
+        entity.name = $('#modal-name').val();
+        if (!$('#modal-id').val()){       //新增
+            axios.post("/advertiserInfo",entity).then(res => {
+                if (res.data.code === '0'){
+                    msg('success','添加成功');
+                    $('#mod').modal('hide');
+                    wrapper.loadTable(1);
+                } else {
+                    msg('error',res.data.msg);
+                }
+            });
+        }else{      //修改
+            entity.id = $('#modal-id').val();
+            axios.put("/advertiserInfo",entity).then(res => {
+                if (res.data.code === '0'){
+                    msg('success','更新成功');
+                    $('#mod').modal('hide');
+                    wrapper.loadTable(1);
+                } else {
+                    msg('error',res.data.msg);
+                }
+            });
+        }
+    });
+
 </script>
 </body>
 </html>
