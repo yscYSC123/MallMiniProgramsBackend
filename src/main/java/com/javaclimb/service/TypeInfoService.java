@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * 用户相关的Service
+ * 商品类别相关的Service
  */
 @Service
 public class TypeInfoService {
