@@ -1,5 +1,6 @@
 package com.javaclimb.service;
 
+import cn.hutool.core.collection.CollectionUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.javaclimb.entity.GoodsInfo;
@@ -20,7 +21,7 @@ public class GoodsInfoService {
 
     /**
      * 分页查询用户列表
-     * 按用户名查询
+     * 按商品名查询
      */
     public PageInfo<GoodsInfo> findPage(Integer pageNum,Integer pageSize,String name){
         PageHelper.startPage(pageNum,pageSize);
@@ -29,22 +30,34 @@ public class GoodsInfoService {
     }
 
     /**
-     * 新增用户
+     * 新增商品
      */
     public GoodsInfo add(GoodsInfo goodsInfo){
+        convertFileListToFields(goodsInfo);
         goodsInfoMapper.insertSelective(goodsInfo);
         return goodsInfo;
     }
 
     /**
-     * 修改用户信息
+     * 修改商品信息
      */
-    public void update(GoodsInfo userInfo){
-        goodsInfoMapper.updateByPrimaryKeySelective(userInfo);
+    public void update(GoodsInfo goodsInfo){
+        convertFileListToFields(goodsInfo);
+        goodsInfoMapper.updateByPrimaryKeySelective(goodsInfo);
     }
 
     /**
-     * 根据id删除用户
+     * 页面传来的上传文件列表转换成以逗号隔开的id列表
+     */
+    private void convertFileListToFields(GoodsInfo goodsInfo){
+        List<Long> fileList = goodsInfo.getFileList();
+        if (!CollectionUtil.isEmpty(fileList)){
+            goodsInfo.setFields(fileList.toString());
+        }
+    }
+
+    /**
+     * 根据id删除商品
      */
     public void delete(Long id){
         goodsInfoMapper.deleteByPrimaryKey(id);

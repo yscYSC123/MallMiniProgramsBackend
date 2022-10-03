@@ -19,8 +19,8 @@ public class TypeInfoService {
     private TypeInfoMapper typeInfoMapper;
 
     /**
-     * 分页查询用户列表
-     * 按用户名查询
+     * 分页查询商品类别列表
+     * 按商品类别名查询
      */
     public PageInfo<TypeInfo> findPage(Integer pageNum,Integer pageSize,String name){
         PageHelper.startPage(pageNum,pageSize);
@@ -29,7 +29,7 @@ public class TypeInfoService {
     }
 
     /**
-     * 新增用户
+     * 新增商品类别
      */
     public TypeInfo add(TypeInfo typeInfo){
         typeInfoMapper.insertSelective(typeInfo);
@@ -37,14 +37,14 @@ public class TypeInfoService {
     }
 
     /**
-     * 修改用户信息
+     * 修改商品类别信息
      */
     public void update(TypeInfo userInfo){
         typeInfoMapper.updateByPrimaryKeySelective(userInfo);
     }
 
     /**
-     * 根据id删除用户
+     * 根据id删除商品类别
      */
     public void delete(Long id){
         typeInfoMapper.deleteByPrimaryKey(id);

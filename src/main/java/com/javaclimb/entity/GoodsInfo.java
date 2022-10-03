@@ -66,8 +66,8 @@ public class GoodsInfo {
     /**
      *   商品图片id，用英文逗号隔开
      */
-    @Column(name = "fileds")
-    private String fileds;
+    @Column(name = "fields")
+    private String fields;
 
     /**
      *   所属卖家ID
@@ -184,12 +184,12 @@ public class GoodsInfo {
         this.typeid = typeid;
     }
 
-    public String getFileds() {
-        return fileds;
+    public String getFields() {
+        return fields;
     }
 
-    public void setFileds(String fileds) {
-        this.fileds = fileds == null ? null : fileds.trim();
+    public void setFields(String fields) {
+        this.fields = fields;
     }
 
     public Long getUserid() {

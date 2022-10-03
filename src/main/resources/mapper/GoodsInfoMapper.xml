@@ -10,7 +10,7 @@
         <if test="name != null and name != 'all' and name != ''">
             and g.`name` like concat('%',#{name},'%')
         </if>
-        <if test="id != null and id != 'all' and id != ''">
+        <if test="id != null and id != ''">
             and g.`id` = #{id}
         </if>
     </select>
