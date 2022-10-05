@@ -74,4 +74,16 @@ public class GoodsInfoService {
         return list.get(0);
     }
 
+    /**
+     * 查询推荐商品
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    public PageInfo<GoodsInfo> findRecommendGoods(Integer pageNum,Integer pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<GoodsInfo> list = goodsInfoMapper.findRecommendGoods();
+        return PageInfo.of(list);
+    }
+
 }

@@ -2,6 +2,7 @@ package com.javaclimb.mapper;
 
 import com.javaclimb.entity.GoodsInfo;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 
@@ -18,4 +19,10 @@ public interface GoodsInfoMapper extends Mapper<GoodsInfo> {
      * @return
      */
     List<GoodsInfo> findByName(@Param("name")String name,@Param("id")Long id);
+
+    /**
+     * 查询推荐商品
+     */
+    @Select("select * from goods_info where recommend='是'")
+    List<GoodsInfo> findRecommendGoods();
 }
