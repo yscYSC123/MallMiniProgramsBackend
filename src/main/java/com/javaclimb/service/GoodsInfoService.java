@@ -86,4 +86,16 @@ public class GoodsInfoService {
         return PageInfo.of(list);
     }
 
+    /**
+     * 查询热卖商品
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    public PageInfo<GoodsInfo> findHotSalesGoods(Integer pageNum,Integer pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<GoodsInfo> list = goodsInfoMapper.findHotSalesGoods();
+        return PageInfo.of(list);
+    }
+
 }

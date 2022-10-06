@@ -25,4 +25,10 @@ public interface GoodsInfoMapper extends Mapper<GoodsInfo> {
      */
     @Select("select * from goods_info where recommend='是'")
     List<GoodsInfo> findRecommendGoods();
+
+    /**
+     * 查询热卖商品
+     */
+    @Select("select * from goods_info order by sales desc")
+    List<GoodsInfo> findHotSalesGoods();
 }
