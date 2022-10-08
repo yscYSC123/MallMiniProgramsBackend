@@ -67,10 +67,11 @@ public class UserInfoService {
      */
     public UserInfo add(UserInfo userInfo){
         //判断用户是否已经存在
-        int count = userInfoMapper.checkRepeat("name",userInfo.getName());
-        if (count > 0){
-            throw new CustomException(ResultCode.USER_EXIST_ERROR);
+        List<UserInfo> list = userInfoMapper.findByName(userInfo.getName());
+        if (CollectionUtil.isNotEmpty(list)){
+            return list.get(0);
         }
+
         if (StrUtil.isBlank(userInfo.getPassword())){
             //默认密码0000
             userInfo.setPassword(SecureUtil.md5("0000"));
