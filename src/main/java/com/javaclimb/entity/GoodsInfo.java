@@ -1,5 +1,7 @@
 package com.javaclimb.entity;
 
+import com.github.pagehelper.util.StringUtil;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -111,6 +113,25 @@ public class GoodsInfo {
     @Transient
     private String commentStatus;
 
+    /**
+     *   商品描述
+     */
+    @Transient
+    private String descriptionView;
+
+    public String getDescriptionView() {
+        if (StringUtil.isEmpty(description)){
+            return "";
+        }
+        if (description.length()>30){
+            return description.substring(0,30)+"...";
+        }
+        return description;
+    }
+
+    public void setDescriptionView(String descriptionView) {
+        this.descriptionView = descriptionView;
+    }
 
     public Long getId() {
         return id;
