@@ -93,6 +93,13 @@ public class UserInfoService {
     }
 
     /**
+     * 根据用户id获取用户
+     */
+    public UserInfo findById(Long id){
+        return userInfoMapper.selectByPrimaryKey(id);
+    }
+
+    /**
      * 根据id删除用户
      */
     public void delete(Long id){

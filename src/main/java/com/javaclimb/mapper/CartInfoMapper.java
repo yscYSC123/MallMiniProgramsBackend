@@ -24,4 +24,11 @@ public interface CartInfoMapper extends Mapper<CartInfo> {
      */
     @Delete("delete from cart_info where userId=#{userId} and goodsId=#{goodsId}")
     int deleteGoods(@Param("userId")Long userId,@Param("goodsId")Long goodsId);
+
+    /**
+     * 根据用户id清空购物车
+     * @param userId
+     */
+    @Delete("delete from cart_info where userId=#{userId}")
+    int deleteByUserId(@Param("userId")Long userId);
 }

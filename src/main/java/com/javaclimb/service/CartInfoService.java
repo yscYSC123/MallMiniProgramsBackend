@@ -74,4 +74,12 @@ public class CartInfoService {
     public void deleteGoods(Long userId,Long goodsId){
         cartInfoMapper.deleteGoods(userId, goodsId);
     }
+
+    /**
+     * 清空购物车
+     * @param userId
+     */
+    public void empty(Long userId) {
+        cartInfoMapper.deleteByUserId(userId);
+    }
 }

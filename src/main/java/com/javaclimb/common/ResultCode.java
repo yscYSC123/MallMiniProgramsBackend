@@ -9,7 +9,8 @@ public enum ResultCode {
     PARAM_ERROR("1001","参数异常"),
     USER_EXIST_ERROR("2001","用户已存在"),
     USER_ACCOUNT_ERROR("2002","账号或密码错误"),
-    USER_NO_EXIST_ERROR("2003","用户不存在");
+    USER_NO_EXIST_ERROR("2003","用户不存在"),
+    ORDER_PAY_ERROR("3001","库存不足，下单失败");
     public String code;
     public String msg;
 
