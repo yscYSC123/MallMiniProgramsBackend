@@ -4,6 +4,7 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.javaclimb.common.Common;
 import com.javaclimb.common.ResultCode;
 import com.javaclimb.entity.GoodsInfo;
 import com.javaclimb.entity.OrderGoodsRel;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -147,5 +149,59 @@ public class OrderInfoService {
             }
         }
         orderInfo.setGoodsList(goodsInfoList);
+    }
+
+    /**
+     * 改变订单状态
+     */
+    public void changeState(Long id,String state){
+        OrderInfo order = orderInfoMapper.findById(id);
+        Long userId = order.getUserid();
+        UserInfo user = userInfoService.findById(userId);
+        if (state.equals("待发货")){
+            //参数校验
+            Double account = user.getAccount();
+            Double totalPrice = order.getTotalprice();
+            if (account < totalPrice){
+                throw new CustomException("-1","账户余额不足");
+            }
+            user.setAccount(user.getAccount() - order.getTotalprice());
+            userInfoService.update(user);
+        }
+        orderInfoMapper.updateState(id,state);
+    }
+
+    /**
+     * 分页查询订单列表
+     */
+    public PageInfo<OrderInfo> findPages(Long userId, Integer pageNum, Integer pageSize, HttpServletRequest request){
+        UserInfo user = (UserInfo) request.getSession().getAttribute(Common.USER_INFO);
+        if (user == null){
+            throw new CustomException("1001","session已失效，请重新登录");
+        }
+        Integer level = user.getLevel();
+        PageHelper.startPage(pageNum,pageSize);
+        List<OrderInfo> orderInfos;
+        if (level == 1){
+            orderInfos = orderInfoMapper.selectAll();
+        }else if(userId != null){
+            orderInfos = orderInfoMapper.findByEndUserId(userId,null);
+        }else{
+            orderInfos = new ArrayList<>();
+        }
+        for (OrderInfo orderInfo : orderInfos){
+            packOrder(orderInfo);
+        }
+        return PageInfo.of(orderInfos);
+    }
+
+    /**
+     * 删除订单
+     * @param id
+     */
+    @Transactional
+    public void delete(Long id) {
+        orderInfoMapper.deleteById(id);
+        orderGoodsRelMapper.deleteByOrderId(id);
     }
 }
