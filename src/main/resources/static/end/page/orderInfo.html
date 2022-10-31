@@ -96,6 +96,7 @@
                                         <td>{{obj.state}}</td>
                                         <td>
                                             <button v-if="obj.state==='待发货'" class="btn btn-primary btn-xs" v-on:click="changeState(obj.id,'待收货')">发货</button>
+                                            <button v-if="obj.state==='申请退货中'" class="btn btn-primary btn-xs" v-on:click="changeState(obj.id,'已退货')">退货</button>
                                             <button class="btn btn-danger btn-xs" v-on:click="del(obj.id)">删除</button>
                                         </td>
                                     </tr>
