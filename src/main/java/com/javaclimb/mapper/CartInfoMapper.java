@@ -12,7 +12,7 @@ import java.util.List;
 public interface CartInfoMapper extends Mapper<CartInfo> {
 
     /**
-     * 根据用户获取购物车列表
+     * 根据用户id获取购物车列表
      * @param userId
      * @return
      */
@@ -31,4 +31,9 @@ public interface CartInfoMapper extends Mapper<CartInfo> {
      */
     @Delete("delete from cart_info where userId=#{userId}")
     int deleteByUserId(@Param("userId")Long userId);
+
+    /**
+     * 查询所有人的购物车
+      */
+    List<CartInfo> findAll();
 }

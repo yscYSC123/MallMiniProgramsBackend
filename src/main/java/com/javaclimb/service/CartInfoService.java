@@ -2,14 +2,19 @@ package com.javaclimb.service;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.date.DateUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.javaclimb.common.Common;
 import com.javaclimb.entity.CartInfo;
 import com.javaclimb.entity.GoodsInfo;
+import com.javaclimb.entity.UserInfo;
+import com.javaclimb.exception.CustomException;
 import com.javaclimb.mapper.CartInfoMapper;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -81,5 +86,31 @@ public class CartInfoService {
      */
     public void empty(Long userId) {
         cartInfoMapper.deleteByUserId(userId);
+    }
+
+    /**
+     * 分页查询购物车列表
+     */
+    public PageInfo<CartInfo> findPageDetails(Integer pageNum, Integer pageSize, HttpServletRequest request){
+        UserInfo user = (UserInfo) request.getSession().getAttribute(Common.USER_INFO);
+        if (user == null){
+            throw new CustomException("1001","session已失效，请重新登录");
+        }
+        Integer level = user.getLevel();
+        PageHelper.startPage(pageNum,pageSize);
+        List<CartInfo> list;
+        if (level == 1){
+            list = cartInfoMapper.findAll();
+        }else {
+            list = cartInfoMapper.findCartByUserId(user.getId());
+        }
+        return PageInfo.of(list);
+    }
+
+    /**
+     * 根据购物车id删除购物车
+     */
+    public void delete(Long id) {
+        cartInfoMapper.deleteByPrimaryKey(id);
     }
 }

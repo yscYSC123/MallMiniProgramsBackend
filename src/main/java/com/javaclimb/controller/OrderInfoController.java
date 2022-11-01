@@ -38,7 +38,7 @@ public class OrderInfoController {
      * 查询所有订单信息（分页）
      */
     @GetMapping("/page")
-    public Result<PageInfo<OrderInfo>> findFrontPages(@RequestParam(required = false) Long userId, @RequestParam(required = false,defaultValue = "1")Integer pageNum, @RequestParam(required = false,defaultValue = "10")Integer pageSize, HttpServletRequest request){
+    public Result<PageInfo<OrderInfo>> findPage(@RequestParam(required = false) Long userId, @RequestParam(required = false,defaultValue = "1")Integer pageNum, @RequestParam(required = false,defaultValue = "10")Integer pageSize, HttpServletRequest request){
         return Result.success(orderInfoService.findPages(userId, pageNum, pageSize,request));
     }
 
@@ -46,7 +46,7 @@ public class OrderInfoController {
      * 查询所有信息（分页）
      */
     @GetMapping("/page/front")
-    public Result<PageInfo<OrderInfo>> findFrontPages(@RequestParam(required = false) Long userId,@RequestParam(required = false)String state,@RequestParam(required = false,defaultValue = "1")Integer pageNum,@RequestParam(required = false,defaultValue = "10")Integer pageSize){
+    public Result<PageInfo<OrderInfo>> findFrontPage(@RequestParam(required = false) Long userId,@RequestParam(required = false)String state,@RequestParam(required = false,defaultValue = "1")Integer pageNum,@RequestParam(required = false,defaultValue = "10")Integer pageSize){
         return Result.success(orderInfoService.findFrontPages(userId, state, pageNum, pageSize));
     }
 
