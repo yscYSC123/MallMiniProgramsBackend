@@ -68,4 +68,13 @@ public class OrderInfoController {
         return Result.success();
     }
 
+    /**
+     * 根据订单id查询所有商品
+     */
+    @GetMapping("/order/{id}")
+    public Result<OrderInfo> findById(@PathVariable Long id){
+        OrderInfo orderInfo = orderInfoService.findById(id);
+        return Result.success(orderInfo);
+    }
+
 }

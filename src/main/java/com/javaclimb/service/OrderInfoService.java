@@ -204,4 +204,13 @@ public class OrderInfoService {
         orderInfoMapper.deleteById(id);
         orderGoodsRelMapper.deleteByOrderId(id);
     }
+
+    /**
+     * 根据订单id查询所有商品
+     */
+    public OrderInfo findById(Long id) {
+        OrderInfo orderInfo = orderInfoMapper.selectByPrimaryKey(id);
+        packOrder(orderInfo);
+        return orderInfo;
+    }
 }
