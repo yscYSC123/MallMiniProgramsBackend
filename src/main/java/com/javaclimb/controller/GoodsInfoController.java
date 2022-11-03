@@ -7,6 +7,7 @@ import com.javaclimb.service.GoodsInfoService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 商品增删改查控制器
@@ -85,4 +86,11 @@ public class GoodsInfoController {
         return Result.success(goodsInfoService.findHotSalesGoods(pageNum,pageSize));
     }
 
+    /**
+     * 根据类型查询商品列表
+     */
+    @GetMapping("/findByType/{typeId}")
+    public Result<List<GoodsInfo>> findByType(@PathVariable Integer typeId){
+        return Result.success(goodsInfoService.findByType(typeId));
+    }
 }
