@@ -1,389 +1,91 @@
-2022-11-03 10:01:35.881  INFO 11072 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-11-03 10:01:36.073  INFO 11072 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-11-03 10:01:47.812  INFO 32644 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 32644 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-03 10:01:47.818  INFO 32644 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-03 10:01:49.739  WARN 32644 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-03 10:01:50.210  INFO 32644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-03 10:01:50.219  INFO 32644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-03 10:01:50.219  INFO 32644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-03 10:01:50.366  INFO 32644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-03 10:01:50.366  INFO 32644 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2336 ms
-2022-11-03 10:01:50.444  INFO 32644 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-03 10:01:50.619  INFO 32644 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-03 10:01:52.155  INFO 32644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-03 10:01:52.162  INFO 32644 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 5.629 seconds (JVM running for 7.473)
-2022-11-03 10:03:48.134  INFO 32644 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-11-03 10:03:48.137  INFO 32644 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-11-03 10:03:52.860  INFO 25732 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 25732 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-03 10:03:52.863  INFO 25732 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-03 10:03:53.449  WARN 25732 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-03 10:03:53.714  INFO 25732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-03 10:03:53.722  INFO 25732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-03 10:03:53.722  INFO 25732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-03 10:03:53.814  INFO 25732 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-03 10:03:53.814  INFO 25732 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 905 ms
-2022-11-03 10:03:53.864  INFO 25732 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-03 10:03:53.940  INFO 25732 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-03 10:03:55.324  INFO 25732 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-03 10:03:55.338  INFO 25732 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 2.905 seconds (JVM running for 4.125)
-2022-11-03 10:04:06.781  INFO 25732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-03 10:04:06.782  INFO 25732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-03 10:04:06.783  INFO 25732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-11-03 10:04:06.933 ERROR 25732 --- [http-nio-8080-exec-1] c.j.exception.GlobalExceptionHandler     : 异常信息
-2022-11-03 10:06:14.282  WARN 25732 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 98033
-2022-11-03 10:06:14.283  WARN 25732 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 112092
-2022-11-03 10:10:06.759  WARN 25732 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 106975
-2022-11-03 10:10:06.761  WARN 25732 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 193914
-2022-11-03 14:58:33.784  INFO 25732 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-11-03 14:58:33.829  INFO 25732 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-11-03 14:58:46.477  INFO 16640 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 16640 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-03 14:58:46.508  INFO 16640 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-03 14:58:48.575  WARN 16640 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-03 14:58:49.097  INFO 16640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-03 14:58:49.105  INFO 16640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-03 14:58:49.105  INFO 16640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-03 14:58:49.262  INFO 16640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-03 14:58:49.262  INFO 16640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2560 ms
-2022-11-03 14:58:49.401  INFO 16640 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-03 14:58:49.562  INFO 16640 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-03 14:58:50.882  INFO 16640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-03 14:58:50.902  INFO 16640 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 6.256 seconds (JVM running for 8.988)
-2022-11-03 14:58:53.142  INFO 16640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-03 14:58:53.142  INFO 16640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-03 14:58:53.143  INFO 16640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-11-03 14:58:55.269 ERROR 16640 --- [http-nio-8080-exec-1] c.j.exception.GlobalExceptionHandler     : 异常信息
-
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.20.jar:5.3.20]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [tomcat-embed-core-9.0.63.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.20.jar:5.3.20]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.63.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
-Caused by: java.lang.NumberFormatException: For input string: "undefined"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_201]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_201]
-	at java.lang.Long.valueOf(Long.java:803) ~[na:1.8.0_201]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.20.jar:5.3.20]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.20.jar:5.3.20]
-	... 47 common frames omitted
-
-2022-11-03 14:59:09.455 ERROR 16640 --- [http-nio-8080-exec-1] c.j.exception.GlobalExceptionHandler     : 异常信息
-
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.20.jar:5.3.20]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [tomcat-embed-core-9.0.63.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.20.jar:5.3.20]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.63.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
-Caused by: java.lang.NumberFormatException: For input string: "undefined"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_201]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_201]
-	at java.lang.Long.valueOf(Long.java:803) ~[na:1.8.0_201]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.20.jar:5.3.20]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.20.jar:5.3.20]
-	... 47 common frames omitted
-
-2022-11-03 14:59:17.256 ERROR 16640 --- [http-nio-8080-exec-7] c.j.exception.GlobalExceptionHandler     : 异常信息
-
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.20.jar:5.3.20]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.20.jar:5.3.20]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [tomcat-embed-core-9.0.63.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.20.jar:5.3.20]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.63.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.20.jar:5.3.20]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.20.jar:5.3.20]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.63.jar:9.0.63]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
-Caused by: java.lang.NumberFormatException: For input string: "undefined"
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[na:1.8.0_201]
-	at java.lang.Long.parseLong(Long.java:589) ~[na:1.8.0_201]
-	at java.lang.Long.valueOf(Long.java:803) ~[na:1.8.0_201]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.20.jar:5.3.20]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.20.jar:5.3.20]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.20.jar:5.3.20]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.20.jar:5.3.20]
-	... 47 common frames omitted
-
-2022-11-03 14:59:49.489  INFO 16640 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-11-03 14:59:49.495  INFO 16640 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-11-03 14:59:54.643  INFO 30908 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 30908 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-03 14:59:54.646  INFO 30908 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-03 14:59:55.213  WARN 30908 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-03 14:59:55.478  INFO 30908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-03 14:59:55.486  INFO 30908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-03 14:59:55.486  INFO 30908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-03 14:59:55.580  INFO 30908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-03 14:59:55.580  INFO 30908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 898 ms
-2022-11-03 14:59:55.632  INFO 30908 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-03 14:59:55.720  INFO 30908 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-03 14:59:57.508  INFO 30908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-03 14:59:57.517  INFO 30908 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.398 seconds (JVM running for 4.849)
-2022-11-03 15:00:04.268  INFO 30908 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-03 15:00:04.268  INFO 30908 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-03 15:00:04.269  INFO 30908 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-11-03 15:01:38.047  WARN 30908 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 93064
-2022-11-03 15:01:38.047  WARN 30908 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 85548
-2022-11-03 15:01:38.047  WARN 30908 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 85551
-2022-11-03 15:01:38.047  WARN 30908 --- [http-nio-8080-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 93287
-2022-11-03 15:05:22.425  WARN 30908 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 186925
-2022-11-03 15:05:22.425  WARN 30908 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 186924
-2022-11-03 15:05:22.426  WARN 30908 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 213833
-2022-11-03 15:05:22.426  WARN 30908 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 201572
-2022-11-03 15:09:12.626  WARN 30908 --- [http-nio-8080-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 230067
-2022-11-03 15:09:12.626  WARN 30908 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 230184
-2022-11-03 15:17:34.494  WARN 30908 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 501391
-2022-11-03 15:17:34.495  WARN 30908 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 501856
-2022-11-03 15:21:10.721  WARN 30908 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 200394
-2022-11-03 15:21:10.725  WARN 30908 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 207778
-2022-11-03 15:34:29.335  WARN 30908 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 788561
-2022-11-03 15:34:29.338  WARN 30908 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 798601
-2022-11-03 15:36:22.276  WARN 30908 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 112918
-2022-11-03 15:36:22.276  WARN 30908 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 112857
-2022-11-03 15:38:38.918  WARN 30908 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 136312
-2022-11-03 15:38:38.918  WARN 30908 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 136314
-2022-11-03 15:38:38.919  WARN 30908 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 136319
-2022-11-03 15:40:35.591  WARN 30908 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 87977
-2022-11-03 15:40:35.595  WARN 30908 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 87980
-2022-11-03 15:52:01.924  WARN 30908 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 634233
-2022-11-03 15:52:01.928  WARN 30908 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 634238
-2022-11-03 15:52:01.930  WARN 30908 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 634242
-2022-11-03 15:52:01.932  WARN 30908 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 634633
-2022-11-03 15:57:50.191  WARN 30908 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 303508
-2022-11-03 15:57:50.191  WARN 30908 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 303509
-2022-11-03 16:02:09.899  WARN 30908 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 259568
-2022-11-03 16:02:09.905  WARN 30908 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 259574
-2022-11-03 16:10:53.951  INFO 30908 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-11-03 16:10:54.063  INFO 30908 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-11-03 16:11:06.798  INFO 7768 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 7768 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-03 16:11:06.803  INFO 7768 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-03 16:11:08.580  WARN 7768 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-03 16:11:09.049  INFO 7768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-03 16:11:09.060  INFO 7768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-03 16:11:09.060  INFO 7768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-03 16:11:09.217  INFO 7768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-03 16:11:09.217  INFO 7768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2211 ms
-2022-11-03 16:11:09.312  INFO 7768 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-03 16:11:09.500  INFO 7768 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-03 16:11:10.789  INFO 7768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-03 16:11:10.798  INFO 7768 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 5.167 seconds (JVM running for 7.052)
-2022-11-03 16:18:57.040  INFO 7768 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-03 16:18:57.040  INFO 7768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-03 16:18:57.042  INFO 7768 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-11-03 16:20:39.230  WARN 7768 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 100851
-2022-11-03 16:20:39.230  WARN 7768 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 100840
-2022-11-03 16:27:16.317  WARN 7768 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 384710
-2022-11-03 16:27:16.319  WARN 7768 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 384717
-2022-11-03 16:27:16.322  WARN 7768 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 384728
-2022-11-03 16:27:16.323  WARN 7768 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 384729
-2022-11-03 16:28:35.034  WARN 7768 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 75254
-2022-11-03 16:28:35.038  WARN 7768 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 75265
-2022-11-03 16:28:35.038  WARN 7768 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 75260
-2022-11-03 16:28:35.038  WARN 7768 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 75266
-2022-11-03 16:28:35.040  WARN 7768 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 75269
-2022-11-03 16:29:42.540  WARN 7768 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 61215
-2022-11-03 16:29:42.541  WARN 7768 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 61216
-2022-11-03 16:31:37.407  WARN 7768 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 114859
-2022-11-03 16:31:37.408  WARN 7768 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 114862
-2022-11-03 16:33:17.869  INFO 7768 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-11-03 16:33:17.935  INFO 7768 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-11-03 16:33:26.220  INFO 15060 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 15060 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-03 16:33:26.224  INFO 15060 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-03 16:33:27.439  WARN 15060 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-03 16:33:27.851  INFO 15060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-03 16:33:27.859  INFO 15060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-03 16:33:27.859  INFO 15060 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-03 16:33:28.000  INFO 15060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-03 16:33:28.001  INFO 15060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1727 ms
-2022-11-03 16:33:28.070  INFO 15060 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-03 16:33:28.171  INFO 15060 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-03 16:33:29.378  INFO 15060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-03 16:33:29.385  INFO 15060 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.874 seconds (JVM running for 5.922)
-2022-11-03 16:33:44.180  INFO 15060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-03 16:33:44.180  INFO 15060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-03 16:33:44.181  INFO 15060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-11-03 16:37:03.528  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 69160
-2022-11-03 16:37:03.531  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 121291
-2022-11-03 16:37:03.533  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 121293
-2022-11-03 16:42:21.806  WARN 15060 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 173678
-2022-11-03 16:42:21.809  WARN 15060 --- [http-nio-8080-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 173681
-2022-11-03 16:42:21.807  WARN 15060 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 173680
-2022-11-03 16:42:21.809  WARN 15060 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 269489
-2022-11-03 16:45:55.496  WARN 15060 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 188305
-2022-11-03 16:45:55.498  WARN 15060 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 188434
-2022-11-03 16:45:55.501  WARN 15060 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 188437
-2022-11-03 16:47:15.450  WARN 15060 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 77902
-2022-11-03 16:47:15.452  WARN 15060 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 77962
-2022-11-03 16:47:15.458  WARN 15060 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 77967
-2022-11-03 16:49:04.547  WARN 15060 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 106342
-2022-11-03 16:49:04.551  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 106370
-2022-11-03 16:49:04.552  WARN 15060 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 106374
-2022-11-03 16:51:20.605  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 134538
-2022-11-03 16:51:20.609  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 134577
-2022-11-03 16:51:20.611  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 134580
-2022-11-03 16:51:20.614  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 134583
-2022-11-03 16:52:39.960  WARN 15060 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 74890
-2022-11-03 16:52:39.960  WARN 15060 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 74932
-2022-11-03 16:56:01.027  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 198612
-2022-11-03 16:56:01.027  WARN 15060 --- [http-nio-8080-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 198637
-2022-11-03 16:56:01.029  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 198640
-2022-11-03 16:57:58.254  WARN 15060 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 117210
-2022-11-03 16:57:58.256  WARN 15060 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 117212
-2022-11-03 17:00:05.637  WARN 15060 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 73393
-2022-11-03 17:00:05.638  WARN 15060 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 73394
-2022-11-03 17:00:05.640  WARN 15060 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 73603
-2022-11-03 17:03:32.059  WARN 15060 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 99048
-2022-11-03 17:03:32.059  WARN 15060 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 99031
-2022-11-03 17:03:32.065  WARN 15060 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 99053
-2022-11-03 17:06:40.592  WARN 15060 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 188485
-2022-11-03 17:06:40.596  WARN 15060 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 188521
-2022-11-03 17:08:30.829  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 81833
-2022-11-03 17:08:30.831  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 82306
-2022-11-03 17:08:30.832  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 84181
-2022-11-03 17:08:30.832  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 104922
-2022-11-03 17:10:12.585  WARN 15060 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 80093
-2022-11-03 17:10:12.585  WARN 15060 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 71394
+2022-11-06 09:54:56.630  INFO 32772 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 32772 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-06 09:54:56.638  INFO 32772 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-06 09:54:58.274  WARN 32772 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-06 09:54:58.771  INFO 32772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-06 09:54:58.778  INFO 32772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-06 09:54:58.778  INFO 32772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-06 09:54:58.934  INFO 32772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-06 09:54:58.934  INFO 32772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2091 ms
+2022-11-06 09:54:59.003  INFO 32772 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-06 09:54:59.166  INFO 32772 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-06 09:55:00.420  INFO 32772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-06 09:55:00.437  INFO 32772 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 4.906 seconds (JVM running for 7.944)
+2022-11-06 09:55:08.362  INFO 32772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-06 09:55:08.363  INFO 32772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-06 09:55:08.365  INFO 32772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-06 09:55:08.496 ERROR 32772 --- [http-nio-8080-exec-1] c.j.exception.GlobalExceptionHandler     : 异常信息
+2022-11-06 09:59:40.273  INFO 32772 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-06 09:59:40.330  INFO 32772 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-06 09:59:46.249  INFO 3260 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 3260 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-06 09:59:46.252  INFO 3260 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-06 09:59:47.552  WARN 3260 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-06 09:59:47.980  INFO 3260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-06 09:59:48.002  INFO 3260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-06 09:59:48.002  INFO 3260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-06 09:59:48.174  INFO 3260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-06 09:59:48.174  INFO 3260 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1889 ms
+2022-11-06 09:59:48.240  INFO 3260 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-06 09:59:48.421  INFO 3260 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-06 09:59:49.519  INFO 3260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-06 09:59:49.524  INFO 3260 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.855 seconds (JVM running for 5.302)
+2022-11-06 10:01:08.675  INFO 3260 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-06 10:01:08.675  INFO 3260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-06 10:01:08.677  INFO 3260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-06 10:04:09.968  WARN 3260 --- [http-nio-8080-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 171625
+2022-11-06 10:05:15.473  INFO 3260 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-06 10:05:15.517  INFO 3260 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-06 10:05:19.089  INFO 14564 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 14564 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-06 10:05:19.092  INFO 14564 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-06 10:05:19.936  WARN 14564 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-06 10:05:20.345  INFO 14564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-06 10:05:20.352  INFO 14564 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-06 10:05:20.352  INFO 14564 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-06 10:05:20.490  INFO 14564 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-06 10:05:20.490  INFO 14564 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1366 ms
+2022-11-06 10:05:20.539  INFO 14564 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-06 10:05:20.648  INFO 14564 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-06 10:05:21.553  INFO 14564 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-06 10:05:21.560  INFO 14564 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.12 seconds (JVM running for 5.069)
+2022-11-06 10:05:30.061  INFO 14564 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-06 10:05:30.062  INFO 14564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-06 10:05:30.062  INFO 14564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-06 10:09:23.280  WARN 14564 --- [http-nio-8080-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 226582
+2022-11-06 10:09:29.512  INFO 14564 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-06 10:09:29.559  INFO 14564 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-06 10:09:34.507  INFO 28628 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 28628 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-06 10:09:34.509  INFO 28628 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-06 10:09:35.516  WARN 28628 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-06 10:09:36.515  INFO 28628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-06 10:09:36.523  INFO 28628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-06 10:09:36.524  INFO 28628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-06 10:09:36.695  INFO 28628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-06 10:09:36.695  INFO 28628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2155 ms
+2022-11-06 10:09:36.754  INFO 28628 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-06 10:09:36.898  INFO 28628 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-06 10:09:37.928  INFO 28628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-06 10:09:37.935  INFO 28628 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 4.226 seconds (JVM running for 6.819)
+2022-11-06 10:09:49.133  INFO 28628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-06 10:09:49.133  INFO 28628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-06 10:09:49.133  INFO 28628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-06 10:12:13.360  WARN 28628 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 139003
+2022-11-06 10:13:50.282  WARN 28628 --- [http-nio-8080-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 65917
+2022-11-06 10:14:29.927  INFO 28628 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-06 10:14:29.929  INFO 28628 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-06 10:14:36.057  INFO 34656 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 34656 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-06 10:14:36.059  INFO 34656 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-06 10:14:37.063  WARN 34656 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-06 10:14:37.432  INFO 34656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-06 10:14:37.442  INFO 34656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-06 10:14:37.442  INFO 34656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-06 10:14:37.615  INFO 34656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-06 10:14:37.616  INFO 34656 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1502 ms
+2022-11-06 10:14:37.673  INFO 34656 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-06 10:14:37.804  INFO 34656 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-06 10:14:38.986  INFO 34656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-06 10:14:38.997  INFO 34656 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.494 seconds (JVM running for 4.853)
+2022-11-06 10:15:27.132  INFO 34656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-06 10:15:27.132  INFO 34656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-06 10:15:27.133  INFO 34656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-06 10:18:08.198  WARN 34656 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 144844
+2022-11-06 10:21:34.845  WARN 34656 --- [http-nio-8080-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 190544
+2022-11-06 10:24:27.521  WARN 34656 --- [http-nio-8080-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 172653
