@@ -1,6 +1,7 @@
 package com.javaclimb.controller;
 
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.crypto.SecureUtil;
 import com.javaclimb.common.Common;
 import com.javaclimb.common.Result;
 import com.javaclimb.common.ResultCode;
@@ -81,6 +82,26 @@ public class AccountController {
             return Result.error("401","未登录");
         }
         return Result.success(user);
+    }
+
+    /**
+     * 修改密码
+     */
+    @PutMapping("/updatePassword")
+    public Result updatePassword(@RequestBody UserInfo userInfo,HttpServletRequest request){
+        Object user = request.getSession().getAttribute(Common.USER_INFO);
+        if (user == null){
+            return Result.error("401","未登录");
+        }
+        String oldPassword = SecureUtil.md5(userInfo.getPassword());
+        if (!oldPassword.equals(((UserInfo)user).getPassword())){
+            return  Result.error(ResultCode.USER_ACCOUNT_ERROR.code,ResultCode.USER_ACCOUNT_ERROR.msg);
+        }
+        ((UserInfo) user).setPassword(SecureUtil.md5(userInfo.getNewPassword()));
+        userInfoService.update((UserInfo) user);
+        //清空session，让用户重新登录
+        request.getSession().setAttribute(Common.USER_INFO,null);
+        return Result.success();
     }
 
 }
