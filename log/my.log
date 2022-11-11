@@ -1,32 +1,148 @@
-2022-11-07 14:46:15.574  INFO 4756 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 4756 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-07 14:46:15.584  INFO 4756 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-07 14:46:20.626  WARN 4756 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-07 14:46:22.097  INFO 4756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-07 14:46:22.204  INFO 4756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-07 14:46:22.204  INFO 4756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-07 14:46:22.684  INFO 4756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-07 14:46:22.684  INFO 4756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6796 ms
-2022-11-07 14:46:22.953  INFO 4756 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-07 14:46:23.947  INFO 4756 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-07 14:46:27.542  INFO 4756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-07 14:46:27.561  INFO 4756 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 14.983 seconds (JVM running for 22.477)
-2022-11-07 14:46:51.314  INFO 4756 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-07 14:46:51.315  INFO 4756 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-07 14:46:51.316  INFO 4756 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-11-07 15:15:25.060  INFO 4756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-11-07 15:15:25.170  INFO 4756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2022-11-07 15:15:32.160  INFO 20372 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 20372 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
-2022-11-07 15:15:32.162  INFO 20372 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-11-07 15:15:33.206  WARN 20372 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
-2022-11-07 15:15:33.630  INFO 20372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-11-07 15:15:33.638  INFO 20372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-07 15:15:33.638  INFO 20372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-11-07 15:15:33.775  INFO 20372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-11-07 15:15:33.775  INFO 20372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1578 ms
-2022-11-07 15:15:33.829  INFO 20372 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-11-07 15:15:34.023  INFO 20372 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-11-07 15:15:35.025  INFO 20372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-11-07 15:15:35.031  INFO 20372 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.43 seconds (JVM running for 5.047)
-2022-11-07 15:15:43.901  INFO 20372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-11-07 15:15:43.901  INFO 20372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-11-07 15:15:43.902  INFO 20372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-11 14:36:31.161  INFO 6272 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 6272 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 14:36:31.172  INFO 6272 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 14:36:37.253  WARN 6272 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 14:36:38.747  INFO 6272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 14:36:38.824  INFO 6272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 14:36:38.824  INFO 6272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 14:36:39.059  INFO 6272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 14:36:39.063  INFO 6272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7627 ms
+2022-11-11 14:36:39.257  INFO 6272 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 14:36:40.079  INFO 6272 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 14:36:42.678  INFO 6272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 14:36:42.685  INFO 6272 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 13.896 seconds (JVM running for 17.941)
+2022-11-11 14:37:01.318  INFO 6272 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 14:37:01.318  INFO 6272 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 14:37:01.319  INFO 6272 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-11 14:53:55.748  INFO 6272 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 14:53:55.832  INFO 6272 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 14:54:03.097  INFO 14824 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 14824 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 14:54:03.099  INFO 14824 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 14:54:04.222  WARN 14824 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 14:54:04.974  INFO 14824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 14:54:04.996  INFO 14824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 14:54:04.997  INFO 14824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 14:54:05.212  INFO 14824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 14:54:05.213  INFO 14824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2078 ms
+2022-11-11 14:54:05.278  INFO 14824 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 14:54:05.471  INFO 14824 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 14:54:07.615  INFO 14824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 14:54:07.632  INFO 14824 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 5.151 seconds (JVM running for 6.659)
+2022-11-11 14:57:39.384  INFO 14824 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 14:57:39.393  INFO 14824 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 14:57:45.952  INFO 21460 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 21460 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 14:57:45.958  INFO 21460 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 14:57:46.999  WARN 21460 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 14:57:47.377  INFO 21460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 14:57:47.384  INFO 21460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 14:57:47.384  INFO 21460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 14:57:47.517  INFO 21460 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 14:57:47.518  INFO 21460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1505 ms
+2022-11-11 14:57:47.592  INFO 21460 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 14:57:47.750  INFO 21460 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 14:57:48.777  INFO 21460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 14:57:48.783  INFO 21460 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.463 seconds (JVM running for 4.929)
+2022-11-11 14:57:56.173  INFO 21460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 14:57:56.173  INFO 21460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 14:57:56.173  INFO 21460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-11 14:58:36.777  INFO 21460 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 14:58:36.785  INFO 21460 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 14:58:40.895  INFO 12220 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 12220 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 14:58:40.898  INFO 12220 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 14:58:41.429  WARN 12220 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 14:58:41.719  INFO 12220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 14:58:41.726  INFO 12220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 14:58:41.726  INFO 12220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 14:58:41.817  INFO 12220 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 14:58:41.817  INFO 12220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 872 ms
+2022-11-11 14:58:41.867  INFO 12220 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 14:58:41.945  INFO 12220 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 14:58:42.780  INFO 12220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 14:58:42.787  INFO 12220 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 2.401 seconds (JVM running for 3.39)
+2022-11-11 14:59:05.448  INFO 12220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 14:59:05.448  INFO 12220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 14:59:05.449  INFO 12220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-11 15:06:21.409  INFO 12220 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 15:06:21.461  INFO 12220 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 15:06:27.314  INFO 18560 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 18560 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 15:06:27.316  INFO 18560 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 15:06:28.397  WARN 18560 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 15:06:28.872  INFO 18560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 15:06:28.881  INFO 18560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 15:06:28.881  INFO 18560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 15:06:29.027  INFO 18560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 15:06:29.027  INFO 18560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2022-11-11 15:06:29.080  INFO 18560 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 15:06:29.221  INFO 18560 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 15:06:30.180  INFO 18560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 15:06:30.190  INFO 18560 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.39 seconds (JVM running for 4.687)
+2022-11-11 15:06:42.463  INFO 18560 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 15:06:42.463  INFO 18560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 15:06:42.464  INFO 18560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-11 15:07:53.447  WARN 18560 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 64951
+2022-11-11 15:14:10.122  INFO 18560 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 15:14:10.185  INFO 18560 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 15:14:17.252  INFO 16216 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 16216 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 15:14:17.254  INFO 16216 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 15:14:18.209  WARN 16216 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 15:14:18.613  INFO 16216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 15:14:18.621  INFO 16216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 15:14:18.621  INFO 16216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 15:14:18.782  INFO 16216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 15:14:18.783  INFO 16216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1488 ms
+2022-11-11 15:14:18.842  INFO 16216 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 15:14:19.009  INFO 16216 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 15:14:19.993  INFO 16216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 15:14:20.002  INFO 16216 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.343 seconds (JVM running for 4.734)
+2022-11-11 15:14:27.404  INFO 16216 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 15:14:27.404  INFO 16216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 15:14:27.405  INFO 16216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-11 15:17:02.858  WARN 16216 --- [http-nio-8080-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 149931
+2022-11-11 15:19:38.201  INFO 16216 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 15:19:38.203  INFO 16216 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 15:19:43.246  INFO 20992 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 20992 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 15:19:43.251  INFO 20992 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 15:19:44.352  WARN 20992 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 15:19:44.730  INFO 20992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 15:19:44.738  INFO 20992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 15:19:44.738  INFO 20992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 15:19:44.897  INFO 20992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 15:19:44.898  INFO 20992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1613 ms
+2022-11-11 15:19:44.952  INFO 20992 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 15:19:45.057  INFO 20992 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 15:19:46.067  INFO 20992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 15:19:46.074  INFO 20992 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.528 seconds (JVM running for 4.993)
+2022-11-11 15:19:49.678  INFO 20992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 15:19:49.678  INFO 20992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 15:19:49.679  INFO 20992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-11 15:26:02.045  INFO 20992 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 15:26:02.096  INFO 20992 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 15:26:08.021  INFO 14756 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 14756 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 15:26:08.024  INFO 14756 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 15:26:09.165  WARN 14756 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 15:26:09.747  INFO 14756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 15:26:09.754  INFO 14756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 15:26:09.754  INFO 14756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 15:26:09.890  INFO 14756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 15:26:09.890  INFO 14756 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1831 ms
+2022-11-11 15:26:09.945  INFO 14756 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 15:26:10.083  INFO 14756 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 15:26:11.064  INFO 14756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 15:26:11.071  INFO 14756 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 3.594 seconds (JVM running for 4.999)
+2022-11-11 15:26:38.661  INFO 14756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-11-11 15:26:38.664  INFO 14756 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-11-11 15:26:42.800  INFO 10956 --- [main] com.javaclimb.WxShopApplication          : Starting WxShopApplication using Java 1.8.0_201 on DESKTOP-H4SEFSL with PID 10956 (E:\Git\workplace\wx_shop\wxshopback\target\classes started by Administrator in E:\Git\workplace\wx_shop\wxshopback)
+2022-11-11 15:26:42.803  INFO 10956 --- [main] com.javaclimb.WxShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-11-11 15:26:43.328  WARN 10956 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2022-11-11 15:26:43.592  INFO 10956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-11 15:26:43.601  INFO 10956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-11 15:26:43.601  INFO 10956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-11-11 15:26:43.698  INFO 10956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-11 15:26:43.698  INFO 10956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
+2022-11-11 15:26:43.746  INFO 10956 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-11-11 15:26:43.812  INFO 10956 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-11-11 15:26:44.598  INFO 10956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-11 15:26:44.604  INFO 10956 --- [main] com.javaclimb.WxShopApplication          : Started WxShopApplication in 2.178 seconds (JVM running for 3.11)
+2022-11-11 15:27:03.706  INFO 10956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-11 15:27:03.706  INFO 10956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-11 15:27:03.707  INFO 10956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-11 15:30:02.134  WARN 10956 --- [http-nio-8080-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/wx_shop?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8, version : 1.2.4, lastPacketReceivedIdleMillis : 115099

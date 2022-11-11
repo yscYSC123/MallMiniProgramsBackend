@@ -20,4 +20,10 @@ public interface CommentInfoMapper extends Mapper<CommentInfo> {
      * 根据商品id获取评论列表
      */
     List<CommentInfo> findByGoodsId(@Param("goodsId") Long goodsId);
+
+    /**
+     * 评论总数
+     */
+    @Select("select count(*) from comment_info")
+    Integer count();
 }

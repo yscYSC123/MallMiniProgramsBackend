@@ -52,4 +52,11 @@ public class CommentInfoService {
     public List<CommentInfo> findByGoodsId(Long goodsId){
         return commentInfoMapper.findByGoodsId(goodsId);
     }
+
+    /**
+     * 用户总数
+     */
+    public Integer count(){
+        return commentInfoMapper.count();
+    }
 }

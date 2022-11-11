@@ -40,5 +40,15 @@ public interface OrderInfoMapper extends Mapper<OrderInfo> {
     @Update("update order_info set state = #{state} where id = #{id}")
     void updateState(@Param("id") Long id, @Param("state") String state);
 
+    /**
+     * 删除订单
+     * @param id
+     */
     void deleteById(Long id);
+
+    /**
+     * 统计总交易额
+     */
+    @Select("select sum(totalPrice) from order_info where state = '已收货'")
+    Double totalPrice();
 }

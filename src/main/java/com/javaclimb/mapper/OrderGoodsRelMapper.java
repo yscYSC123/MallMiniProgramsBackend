@@ -1,6 +1,7 @@
 package com.javaclimb.mapper;
 
 import com.javaclimb.entity.OrderGoodsRel;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 import tk.mybatis.mapper.common.Mapper;
 
@@ -17,4 +18,10 @@ public interface OrderGoodsRelMapper extends Mapper<OrderGoodsRel> {
      * 根据订单id删除关联关系
      */
     void deleteByOrderId(Long orderId);
+
+    /**
+     * 统计总销量
+     */
+    @Select("select sum(count) from order_goods_rel")
+    Integer totalShopping();
 }

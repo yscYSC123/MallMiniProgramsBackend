@@ -106,4 +106,11 @@ public class UserInfoService {
         userInfoMapper.deleteByPrimaryKey(id);
     }
 
+    /**
+     * 用户总数
+     */
+    public Integer count(){
+        return userInfoMapper.count();
+    }
+
 }

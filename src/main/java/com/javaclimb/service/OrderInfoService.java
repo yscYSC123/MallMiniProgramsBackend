@@ -213,4 +213,18 @@ public class OrderInfoService {
         packOrder(orderInfo);
         return orderInfo;
     }
+
+    /**
+     * 总交易额
+     */
+    public Double totalPrice(){
+        return orderInfoMapper.totalPrice();
+    }
+
+    /**
+     * 总销量
+     */
+    public Integer totalShopping(){
+        return orderGoodsRelMapper.totalShopping();
+    }
 }
