@@ -82,15 +82,28 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
-                    <div class="main-box mb-burlywood">
+                    <div class="main-box mb-cadetblue">
                         <i class="fa fa-rmb"></i>
                         <span style="margin-left: 20px">总销量：{{totalShopping}}</span>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="left" style="width: 100%;height: 400px"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="right" style="width: 100%;height: 400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
 <script src="../js/jquery-1.10.2.js"></script>
 <script src="../js/bootstrap.min.js"></script>
@@ -110,7 +123,10 @@
             totalUser:0,     //用户总数
             totalComment:0,      //评论总数
             totalPrice:0,        //总交易额
-            totalShopping:0     //总销量
+            totalShopping:0,     //总销量
+            echartsType:'pie',    //饼图
+            echartsShowLeftArr: [],//左侧图表数据
+            echartsShowRightArr: [] //右侧图表数据
         },
         created:function () {
             this.user = JSON.parse(localStorage.getItem('user'));
@@ -122,10 +138,42 @@
                     this.totalPrice = map['totalPrice'];
                     this.totalShopping = map['totalShopping'];
                 }
-            })
+            });
+            this.drawLine();
         },
         methods:{
+            //绘制柱状图或饼图
+            drawLine(){
+                axios.get("/echarts/get/price").then(res => {
+                    if (res.data.code === '0'){
+                        this.echartsShowLeftArr = res.data.data;
+                        if(this.echartsShowLeftArr.length){
+                            let myChart = echarts.init(document.getElementById('left'));
+                            let option = this.getEchartsType(this.echartsShowLeftArr,this.echartsType);
+                            myChart.setOption(option,true);
+                        }
+                    }
+                });
 
+                axios.get("/echarts/get/shopping").then(res => {
+                    if (res.data.code === '0'){
+                        this.echartsShowRightArr = res.data.data;
+                        if(this.echartsShowRightArr.length){
+                            let myChart = echarts.init(document.getElementById('right'));
+                            let option = this.getEchartsType(this.echartsShowRightArr,this.echartsType);
+                            myChart.setOption(option,true);
+                        }
+                    }
+                });
+            },
+
+            getEchartsType(echartsArr,type){
+                for (let item of echartsArr){
+                    if (item.series[0].type === type){
+                        return item;
+                    }
+                }
+            }
         }
     });
 </script>

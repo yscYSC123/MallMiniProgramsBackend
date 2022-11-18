@@ -13,6 +13,7 @@ import com.javaclimb.entity.UserInfo;
 import com.javaclimb.exception.CustomException;
 import com.javaclimb.mapper.OrderGoodsRelMapper;
 import com.javaclimb.mapper.OrderInfoMapper;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,6 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class OrderInfoService {
@@ -226,5 +228,19 @@ public class OrderInfoService {
      */
     public Integer totalShopping(){
         return orderGoodsRelMapper.totalShopping();
+    }
+
+    /**
+     * 分类总销售额
+     */
+    public List<Map<String, Object>> getTypePrice(){
+        return orderInfoMapper.getTypePrice();
+    }
+
+    /**
+     * 分类总销量
+     */
+    public List<Map<String, Object>> getTypeCount(){
+        return orderInfoMapper.getTypeCount();
     }
 }

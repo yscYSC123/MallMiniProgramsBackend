@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Update;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 public interface OrderInfoMapper extends Mapper<OrderInfo> {
 
@@ -51,4 +52,22 @@ public interface OrderInfoMapper extends Mapper<OrderInfo> {
      */
     @Select("select sum(totalPrice) from order_info where state = '已收货'")
     Double totalPrice();
+
+    /**
+     * 分类总销售额
+     */
+    @Select("SELECT SUM(a.count*b.price) as `price`,c.`name` FROM order_goods_rel as a\n" +
+            "LEFT JOIN goods_info as b on a.goodsId=b.id\n" +
+            "LEFT JOIN type_info as c on c.id=b.typeId\n" +
+            "GROUP BY b.typeId")
+    List<Map<String, Object>> getTypePrice();
+
+    /**
+     * 分类总销量
+     */
+    @Select("SELECT SUM(a.count) as `count`,c.`name` FROM order_goods_rel as a\n" +
+            "LEFT JOIN goods_info as b on a.goodsId=b.id\n" +
+            "LEFT JOIN type_info as c on c.id=b.typeId\n" +
+            "GROUP BY b.typeId")
+    List<Map<String, Object>> getTypeCount();
 }
